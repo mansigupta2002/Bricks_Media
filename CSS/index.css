@@ -1,0 +1,128 @@
+* {
+    
+    background-size: cover;          
+    background-repeat: no-repeat;     
+    background-position: center;      
+    background-attachment: fixed;  
+}
+
+.navbar {
+    background-color: black; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0d6efd; /* Bootstrap primary color */
+  }
+  
+  .navbar-brand:hover {
+    color: #0a58ca;
+  }
+  
+  .nav-link {
+    color: #343a40;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  .nav-link.active {
+    color: #0d6efd;
+  }
+  
+  .nav-link.disabled {
+    color: #adb5bd;
+    pointer-events: none;
+  }
+  
+  .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  .btn-outline-success {
+    border-color: #198754;
+    color: black;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #198754;
+    color: #fff;
+  }
+  .content {
+    padding: 40px;
+  }
+  .content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .points ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .points li::before {
+    content: "✔";
+    color: green;
+    margin-right: 10px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .logo-carousel {
+    overflow: hidden;
+    background: rgb(171, 171, 204);
+    padding: 20px 0;
+  }
+  
+  .logo-track {
+    display: flex;
+    width: calc(200px * 10); /* Adjust based on total logos */
+    animation: scroll 30s linear infinite;
+  }
+  
+  .logo {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  }
+  
+  @keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+.part2{
+    text-align: center;
+    padding: 10px;
+}
+    
