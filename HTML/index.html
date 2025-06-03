@@ -1,284 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/cards.css">
-<style>
-    body{
-        background-color: rgb(101, 101, 196);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="/CSS/cards.css">
+  <style>
+    body {
+      background-color: rgb(101, 101, 196);
     }
-</style>
+  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/CSS/image/logo.webp" alt="Logo" width="80" height="50" class="d-inline-block align-text-top">
-              </a>
-              
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Course
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link" href="#">Placements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Jobs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/CSS/image/logo.webp" alt="Logo" width="80" height="50" class="d-inline-block align-text-top">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Course
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    <div class="container mt-5">
-        <div class="row align-items-center">
-          <!-- Left: Content -->
-          <div class="col-md-6">
-            <div class="content">
-              <h1>LEARN WITH IT ACCURATE FOR BEST JOB OPPORTUNITY</h1>
-              <div class="points">
-                <ul>
-                  <li>Expert Instructors</li>
-                  <li>Project-based learning</li>
-                  <li>Internship Opportunities</li>
-                  <li>Certification programs</li>
-                </ul>
-              </div>
-            </div>   
-          </div>
-      
-          <!-- Right: Form -->
-          <div class="col-md-6">
-            <div class="card shadow rounded-4 p-4">
-              <form>
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
-                </div>
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="number" placeholder="Your Phone Number">
-                </div>
-                <div class="mb-4">
-                  <label for="courseSelect" class="form-label">Select Course</label>
-                  <select class="form-select" id="courseSelect">
-                    <option selected disabled>Choose a course</option>
-                    <option value="web">Web Development</option>
-                    <option value="data">Data Science</option>
-                    <option value="ai">Artificial Intelligence</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Bottom: Logo Carousel -->
-        <div class="logo-carousel mt-5">
-          <div class="logo-track">
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            
-      
-            <!-- Repeat for smooth scroll -->
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
-            <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Placements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row align-items-center">
+      <!-- Left: Content -->
+      <div class="col-md-6">
+        <div class="content">
+          <h1>LEARN WITH IT ACCURATE FOR BEST JOB OPPORTUNITY</h1>
+          <div class="points">
+            <ul>
+              <li>Expert Instructors</li>
+              <li>Project-based learning</li>
+              <li>Internship Opportunities</li>
+              <li>Certification programs</li>
+            </ul>
           </div>
         </div>
       </div>
-    <!-- <div class="part2">
-        <h3>OUR TRAINING COURSES</h3>
-        <h3>Be certified by global certifications and increase your understanding</h3>
-    </div>     -->
-    
-    <!-- <--cards-->
-    <section class="container my-5">
-        <h3 class="text-center text-white mb-4">OUR TRAINING COURSES</h3>
-        <p class="text-center text-light mb-5">Be certified by global certifications and increase your understanding</p>
-      
-        <!-- Row 1 -->
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="SAP"><div class="course-content"><h5>SAP</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Salesforce"><div class="course-content"><h5>SALESFORCE</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Data Analytics"><div class="course-content"><h5>DATA ANALYTICS</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Data Science"><div class="course-content"><h5>DATA SCIENCE</h5></div></div></div>
+
+      <!-- Right: Form -->
+      <div class="col-md-6">
+        <div class="card shadow w-100 h-50  rounded-4 p-4">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="number" placeholder="Your Phone Number">
+            </div>
+            <div class="mb-4">
+              <label for="courseSelect" class="form-label">Select Course</label>
+              <select class="form-select" id="courseSelect">
+                <option selected disabled>Choose a course</option>
+                <option value="web">Web Development</option>
+                <option value="data">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
         </div>
-      
-        <!-- Row 2 -->
-        <div class="row g-4 justify-content-center mt-3">
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Python"><div class="course-content"><h5>PYTHON</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="DevOps"><div class="course-content"><h5>DEVOPS</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Java"><div class="course-content"><h5>JAVA</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Cybersecurity"><div class="course-content"><h5>CYBERSECURITY</h5></div></div></div>
-        </div>
-      
-        <!-- Row 3 -->
-        <div class="row g-4 justify-content-center mt-3">
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="AI"><div class="course-content"><h5>ARTIFICIAL INTELLIGENCE</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="ML"><div class="course-content"><h5>MACHINE LEARNING</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="AWS"><div class="course-content"><h5>AWS</h5></div></div></div>
-          <div class="col-md-3"><div class="course-card"><img src="/CSS/image/AMBITIONBOX.png" alt="Testing"><div class="course-content"><h5>SOFTWARE TESTING</h5></div></div></div>
-        </div>
-      </section>
-      <!-- <--company Part -->
-      <section class="container my-5">
-        <h2 class="text-center text-white mb-4">
-          <span style= "padding: 5px 15px; border-radius: 8px;">
-            We are one of the Most Trusted Brands!
-          </span>
-        </h2>
-      
-        <!-- Row 1 -->
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="GoAbroad">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.5</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="UrbanPro">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.7</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="GoOverseas">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.5</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="AmbitionBox">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.6</span>
-              </div>
-            </div>
+      </div>
+    </div>
+
+    <!-- Bottom: Logo Carousel -->
+    <div class="logo-carousel mt-5">
+      <div class="logo-track">
+        <div class="logo"><img src="/CSS/image/glassdoor.png" alt="SAP"></div>
+        <div class="logo"><img src="/CSS/image/gooverseas.jpg" alt="AmbitionBox"></div>
+        <div class="logo"><img src="/CSS/image/google.png" alt="AmbitionBox"></div>
+        <div class="logo"><img src="/CSS/image/mouthshut.jpg" alt="AmbitionBox"></div>
+        <div class="logo"><img src="/CSS/image/Urbanpro.jpg" alt="AmbitionBox"></div>
+        <div class="logo"><img src="/CSS/image/abroad.jpg" alt="AmbitionBox"></div>
+
+
+        <!-- Repeat for smooth scroll -->
+        <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
+        <div class="logo"><img src="/CSS/image/AMBITIONBOX.png" alt="AmbitionBox"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <--cards-->
+  <section class="container my-5">
+    <h3 class="text-center mb-4" style="color: black;">OUR TRAINING COURSES</h3>
+
+
+    <!-- <p class="text-center text-light mb-5">Be certified by global certifications and increase your understanding</p> -->
+
+    <!-- Row 1 -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/sap.jpg" alt="SAP">
+          <div class="course-content">
+            <h5>SAP</h5>
           </div>
         </div>
-      
-        <!-- Row 2 -->
-        <div class="row g-4 justify-content-center mt-3">
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="Google">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.7</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="Glassdoor">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.6</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="EduGorilla">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.5</span>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card text-center p-3">
-              <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="MouthShut">
-              <div class="card-body">
-                <div class="stars text-warning">★★★★★</div>
-                <span class="badge bg-primary mt-2">4.6</span>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/salesforce.png" alt="Salesforce">
+          <div class="course-content">
+            <h5>SALESFORCE</h5>
           </div>
         </div>
-      </section>
-      <section class="info-section">
-        <!-- Left Column: Text -->
-        <div class="info-text">
-          <h2>WHAT MAKES IT ACCURATE DIFFERENT?</h2>
-          <ul>
-            <li>Training programs at IT Accurate act as a foundation for students who are willing to become distinguished & expert IT professionals.</li>
-            <li>Our commitment & focus towards empowering the students with cutting edge industry practices & Salesforce expertise has resulted in exceptional learning experiences.</li>
-            <li>This approach has helped students seize the right career opportunities.</li>
-          </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/dataanalytics.jpg" alt="Data Analytics">
+          <div class="course-content">
+            <h5>DATA ANALYTICS</h5>
+          </div>
         </div>
-          
-            <!-- Right Column: Hover Boxes -->
-            <div class="features-container">
-              <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
-                <div class="overlay1">INTERVIEW GUIDANCE</div>
-              </div>
-              <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
-                <div class="overlay1">GUARANTEED SATISFACTION CERTIFICATION</div>
-              </div>
-              <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
-                <div class="overlay1">JOB READY</div>
-              </div>
-              <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
-                <div class="overlay1">ONLINE + OFFLINE SESSIONS</div>
-              </div>
-            </div>
-          </section>
-          
-      
-          
-      
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/datascience.jpg" alt="Data Science">
+          <div class="course-content">
+            <h5>DATA SCIENCE</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/python.png" alt="Python">
+          <div class="course-content">
+            <h5>PYTHON</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/busanalyticts.webp" alt="DevOps">
+          <div class="course-content">
+            <h5>DEVOPS</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/dataanalytics.jpg" alt="Java">
+          <div class="course-content">
+            <h5>JAVA</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/datascience.jpg" alt="Cybersecurity">
+          <div class="course-content">
+            <h5>CYBERSECURITY</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/busanalyticts.webp" alt="AI">
+          <div class="course-content">
+            <h5>ARTIFICIAL INTELLIGENCE</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/busanalyticts.webp" alt="ML">
+          <div class="course-content">
+            <h5>MACHINE LEARNING</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/dataanalytics.jpg" alt="AWS">
+          <div class="course-content">
+            <h5>AWS</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="course-card"><img src="/CSS/image/datascience.jpg" alt="Testing">
+          <div class="course-content">
+            <h5>SOFTWARE TESTING</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <--company Part -->
+  <section class="container my-5">
+    <h2 class="text-center text-white mb-4">
+      <span style="padding: 5px 15px; border-radius: 8px; color: black; ">
+        We are one of the Most Trusted Brands!
+      </span>
+    </h2>
+
+    <!-- Row 1 -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/abroad.jpg" class="card-img-top mx-auto" style="width: 80px;" alt="GoAbroad">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/Urbanpro.jpg" class="card-img-top mx-auto" style="width: 80px;" alt="UrbanPro">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/gooverseas.jpg" class="card-img-top mx-auto" style="width: 80px;" alt="GoOverseas">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/AMBITIONBOX.png" class="card-img-top mx-auto" style="width: 80px;" alt="AmbitionBox">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/google.png" class="card-img-top mx-auto" style="width: 80px;" alt="Google">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.7</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/glassdoor.png" class="card-img-top mx-auto" style="width: 80px;" height="200px"
+            width="200px" alt="Glassdoor">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.6</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/edugorilla.png" class="card-img-top mx-auto" style="width: 80px;" alt="EduGorilla">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card text-center p-3">
+          <img src="/CSS/image/mouthshut.jpg" class="card-img-top mx-auto" style="width: 80px;" alt="MouthShut">
+          <div class="card-body">
+            <div class="stars text-warning">★★★★★</div>
+            <span class="badge bg-primary mt-2">4.6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info-section">
+    <!-- Left Column: Text -->
+    <div class="info-text">
+      <h2>WHAT MAKES IT ACCURATE DIFFERENT?</h2>
+      <ul>
+        <li>Training programs at IT Accurate act as a foundation for students who are willing to become distinguished &
+          expert IT professionals.</li>
+        <li>Our commitment & focus towards empowering the students with cutting edge industry practices & Salesforce
+          expertise has resulted in exceptional learning experiences.</li>
+        <li>This approach has helped students seize the right career opportunities.</li>
+      </ul>
+    </div>
+
+    <!-- Right Column: Hover Boxes -->
+    <div class="features-container">
+      <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
+        <div class="overlay1">INTERVIEW GUIDANCE</div>
+      </div>
+      <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
+        <div class="overlay1">GUARANTEED SATISFACTION CERTIFICATION</div>
+      </div>
+      <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
+        <div class="overlay1">JOB READY</div>
+      </div>
+      <div class="featurebox1" style="background-image: url('/CSS/image/AMBITIONBOX.png');">
+        <div class="overlay1">ONLINE + OFFLINE SESSIONS</div>
+      </div>
+    </div>
+  </section>
+  <!-- Form -->
+  <div class="container">
+    <div class="form-section">
+      <h2>Reach us now!</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="phone">Phone No.</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+
+        <label for="course">Select Your Course</label>
+        <select id="course">
+          <option value="salesforce">Salesforce</option>
+          <option value="java">Java</option>
+          <option value="webdev">Web Development</option>
+          <option value="python">Python</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="info-section">
+      <h3>Why IT ACCURATE?</h3>
+      <p>Be a part of our comprehensive training programs & start your journey towards becoming a Professional Developer
+        today.</p>
+      <ul>
+        <li>🟣 Start learning with us!</li>
+        <li>🟣 Become industry ready</li>
+        <li>🟣 24*7 support</li>
+        <li>🟣 Attend live webinars every week</li>
+        <li>🟣 Access to study material</li>
+        <li>🟣 Job placement assistance</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="/CSS/image/logo.webp" alt="IT Accurate Logo" />
+    </div>
+  
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses ▾</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Contact</h4>
+        <p><strong>Email:</strong> info@itaccurate.com</p>
+        <p><strong>Phone:</strong> 09175978889</p>
+        <p><strong>Offices</strong></p>
+        <p><strong>Nagpur:</strong><br>
+          607, 608 B-wing, Lokmat Bhavan,<br>
+          Lokmat Square, Ramdaspeth, Nagpur<br>
+          Ph.– 09175978889</p>
+        <p><strong>Thane:</strong><br>
+          Office No. 806, Paradise Tower,<br>
+          Naupada, Thane West<br>
+          Ph.– 07738277389</p>
+      </div>
+  
+      <div class="footer-box">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
